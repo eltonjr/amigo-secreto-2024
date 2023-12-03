@@ -1,5 +1,5 @@
 const fs = require('fs');
-const baseurl = 'file:///Users/eltonnhnjr/workspace/src/github.com/eltonjr/amigo-secreto/index.html';
+const baseurl = 'http://eltonjr.github.io/amigo-secreto/';
 
 // node make.js Turma Fulano,Cicrano,...
 if (process.argv.length < 4) {
