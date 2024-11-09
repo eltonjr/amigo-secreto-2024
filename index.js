@@ -1,4 +1,4 @@
-const people = {"UGF1bGE=":"RWzDs2JpYQ==","RWx0b24gKHBhaSk=":"SnVuaW9y","SnVuaW9y":"SnVjYQ==","RHVkYQ==":"RWx0b24gKHBhaSk=","QXJtYW5kaW8=":"QWRyaWFuZQ==","RWzDs2JpYQ==":"TWFyaWEgQW50w7RuaWE=","QWRyaWFuZQ==":"RHVkYQ==","TWFyaWEgQW50w7RuaWE=":"QXJtYW5kaW8=","SnVjYQ==":"UGF1bGE="};
+const people = {"SnVuaW9y":"RHVkYQ==","RHVkYQ==":"RWx0b24=","SnVjYQ==":"RWzDs2JpYQ==","UGF1bGE=":"SnVjYQ==","QXJtYW5kaW8=":"QWRyaWFuZQ==","RWzDs2JpYQ==":"TWFyaWE=","RWx0b24=":"QXJtYW5kaW8=","TWFyaWE=":"SnVuaW9y","QWRyaWFuZQ==":"UGF1bGE="};
 
 const base64ToBytes = (base64) => {
 	const binString = atob(base64);
@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	console.log(id);
 	const who = unmakeHash(id);
 
-	const prank = document.querySelector('#prank');
-	prank.innerHTML = `${who}`;
 	const c = document.querySelector('#real');
 	c.innerHTML = `${who} pegou ${unmakeHash(people[id])}`;
 });
